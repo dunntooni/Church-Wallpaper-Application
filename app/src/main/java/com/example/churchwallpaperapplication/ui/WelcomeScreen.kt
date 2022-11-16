@@ -1,4 +1,4 @@
-package com.example.churchwallpaperapplication
+package com.example.churchwallpaperapplication.ui
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
@@ -12,10 +12,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHost
-import com.example.churchwallpaperapplication.ui.ImageViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.rememberNavController
+import com.example.churchwallpaperapplication.R
 
 enum class WelcomeScreen() {
-    AssemblyIntro
+    AssemblyIntro,
 }
 
 /**
@@ -61,13 +64,13 @@ fun WallpaperApp(modifier: Modifier = Modifier, viewModel: ImageViewModel = view
     ) { innerPadding ->
         val uiState by viewModel.uiState.collectAsState()
 
-        NavHost(
-            navController = navController,
-            startDestination = WelcomeScreen.AssemblyIntro.name,
-            modifier = modifier.padding(innerPadding)
-        ) {
-
-        }
+//        NavHost(
+//            navController = navController,
+//            startDestination = WelcomeScreen.AssemblyIntro.name,
+//            modifier = modifier.padding(innerPadding)
+//        ) {
+//
+//        }
         Column(Modifier.padding(16.dp)) {
             Text(text = "Hello!")
             Text(text = "Welcome to the church wallpaper application.\n" +

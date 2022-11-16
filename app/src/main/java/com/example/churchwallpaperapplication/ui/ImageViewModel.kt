@@ -14,7 +14,7 @@ class ImageViewModel : ViewModel() {
     /**
      * Cupcake state for this order
      */
-    private val _uiState = MutableStateFlow(ImageUiState(pickupOptions = pickupOptions())) // TODO: Figure out how to get rid of pickupOptions()
+    private val _uiState = MutableStateFlow(ImageUiState()) // TODO: Figure out how to get rid of pickupOptions()
     val uiState: StateFlow<ImageUiState> = _uiState.asStateFlow()
 
     private fun pickupOptions(): List<String> {

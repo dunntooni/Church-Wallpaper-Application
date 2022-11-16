@@ -8,7 +8,5 @@ data class ImageUiState(
     /** Selected date for pickup (such as "Jan 1") */
     val date: String = "",
     /** Total price for the order */
-    val price: String = "",
-    /** Available pickup dates for the order*/
-    val pickupOptions: List<String> = listOf()) {
+    val price: String = "") {
 }
