@@ -2,4 +2,13 @@
     <string name="app_name">Church Wallpaper Application</string>
     <string name="hello_world">Hello World</string>
     <string name="back_button">Back</string>
+    <string name="test_chapter_1">Chapter 1</string>
+    <string name="test_chapter_2">Chapter 2</string>
+    <string name="test_big_book_1">The Old Testament</string>
+    <string name="test_big_book_2">The New Testament</string>
+    <string name="test_book_1">Genesis</string>
+    <string name="test_book_2">Exodus</string>
+    <string name="test_verse_1">Verse 1</string>
+    <string name="test_verse_2">Verse 2</string>
+
 </resources>
