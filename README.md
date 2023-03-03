@@ -49,7 +49,7 @@ Now that we have both an image and a scripture, we can tap our `Save Wallpaper` 
 <br>
 <br>
 <br>
-<br>
+<hr>
 <font size= "1">
 This application is not to be used commercially without express permission of the owner (Github user: RealLifeDunnce).
 </font>
